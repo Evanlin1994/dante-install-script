@@ -110,5 +110,3 @@ echo "Port: 1080"
 echo "Username: sockd"
 echo "Password: $PASSWORD"
 
-# 检查服务状态
-$SYSTEMCTL status danted
