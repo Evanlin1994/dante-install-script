@@ -31,7 +31,7 @@ fi
 # 更新系统
 $PKG_MANAGER update -y
 
-# 安装 Dante 服务器
+# 安装依赖包
 if [[ $PKG_MANAGER == "apt" ]]; then
   $PKG_MANAGER install dante-server -y
 elif [[ $PKG_MANAGER == "yum" ]]; then
@@ -109,4 +109,3 @@ echo "Server: $(curl -s ifconfig.me)"
 echo "Port: 1080"
 echo "Username: sockd"
 echo "Password: $PASSWORD"
-
